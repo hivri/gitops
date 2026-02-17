@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: localhost:5000/flux:0.1
+          image: registry.localhost:5000/flux:0.1
           ports:
             - containerPort: 80
