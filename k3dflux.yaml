@@ -1,0 +1,14 @@
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: flux
+servers: 1
+agents: 0
+options:
+  k3s:
+    extraArgs:
+      - arg: "--no-deploy=traefik"
+        nodeFilters:
+          - "server:0"
+  runtime:
+    noTools: true
