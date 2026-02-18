@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: k3d-myregistry:5000/flux:0.3
+          image: k3d-myregistry:5000/flux:0.4
           imagePullPolicy: Always
           ports:
             - containerPort: 80
