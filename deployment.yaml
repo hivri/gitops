@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: myregistry.localhost:5000/flux:0.2
+          image: k3d-myregistry:5000/flux:0.2
           ports:
             - containerPort: 80
